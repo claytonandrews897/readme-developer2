@@ -1,7 +1,7 @@
 // Packages needed for this application //
-//lcoal js in utils
+//local js in utils
 const createReadme = require('./utils/generateReadme');
-const getGithubFile = require("./utils/generateLicense");
+const getGithubFile = require('./utils/generateLicense');
 // External packages
 const inquirer = require("inquirer");
 const async = require("async");
@@ -94,30 +94,10 @@ const writeLicenseDoc = async (fileName, data) => {
     const text =await getGithubFile(data.license);
       fs.writeFile(fileName, text.data.body , (err) =>
         err ? console.error(err) : console.log('License created')
-  }
-} ;
-// Interface
-const printIntro = () => {
-
-    console.log(
-
-        #########################################################\n
-        Welcome to the README writer\n
-        #########################################################\n
-        How to use:\n
-        * Respond to each question with the appropriate information\n
-        * Some sections will pull up a text editor, put your desired information for that section, Close and click save\n
-        * Make sure the entered text is properly formatted with markdown to be rendered correctly\n
-        * You can learn more about markdown language here: https://www.markdownguide.org/basic-syntax/\n
-        * Leaving a question blank will still create the section but leave it blank\n
-        * writing '!DEL' will skip the section and it will not be created.\n
-        * If you need to exit early just "ctrl c"\n
-        #########################################################\n 
     );
-};
+} ;
 //INIT
 const init = () => {
-  printIntro();
   letfolder = './Documents';
   if (!fs.existSync(folder)) {
     fs.mkdir(folder, (err) => {
@@ -135,9 +115,9 @@ const init = () => {
     //Writes license file
     if(response.licenseDoc === 'Yes'){
       writeLicenseDoc(folder + '/License.md', respose);
-    }
-  });
-};
+      }
+    })
+  )};
 
 // Function call to initialize app
 init();
