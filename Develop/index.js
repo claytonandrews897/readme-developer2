@@ -97,7 +97,7 @@ const writeLicenseDoc = async (fileName, data) => {
   }
 } ;
 // Interface
-cosnt printIntro = () => {
+const printIntro = () => {
 
     console.log(
 
