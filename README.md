@@ -35,3 +35,6 @@ Once completed a file named (Generated)README.md will be made.
 At your discretion, you may rename the (Generated)README.md file to the file name of your choice.
 (Optional) Regarding future use, you may alter the prompted questions within the index.js and generatedMarkdown.js to suit your needs.
 (Optional) The (Generated)README.md file serves as a foundation so you are not limited to altering the file - once generated you may alter the document to your preferences just like any other README.md file.
+
+# Sources
+I had found a source within Github user mattyd96 in which I copied his json files and looked over his generated application
