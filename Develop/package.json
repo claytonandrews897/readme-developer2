@@ -9,6 +9,8 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "@octokit/request": "github:octokit/request",
+    "inquirer": "^6.3.1",
+    "octokit": "^4.0.2"
   }
 }

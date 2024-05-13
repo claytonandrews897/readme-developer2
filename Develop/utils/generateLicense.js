@@ -11,4 +11,4 @@ const getGithubFile = license => {
 
     });
 };
-module.exports = getGithubFFile;
+module.exports = getGithubFile;
